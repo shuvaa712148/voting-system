@@ -45,7 +45,7 @@ header h1 {
 header {
   padding: 100px;
   background-color: rgb(17, 124, 143);
-  background-image: url(image/vote.jpg);
+  background-image: url(/image/vote.jpg);
 }
 
 
