@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter's Point</title>
+
+
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <style>
+        body {
+            background-image: linear-gradient(rgb(204, 255, 255), rgb(255, 204, 204), rgb(204, 255, 204));
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Voter's Point</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
+       <div class="container-fluid">
+            
+            <div class="middle">
+
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Result</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+       
+            <div class="menu-right">
+                <ul class="navbar-nav right">
+                    <li><a href="login_box.html"><i class="fa fa-user-plus" aria-hidden="true"></i>Sign Up</a></li>
+                    <li><a href="login_box.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a></li>
+                </ul>
+            </div>
+      
+        </div>
+
+    </nav>
+
+    <br>
+
+    <div class="row">
+        <div class="pca">
+            <h3> Precaution:</h3>
+            <p> 1.Atfirst always check if the system works properly or not.If not please contact our helpline <br>
+                2. Once you done your voting don't forget to log out from this site.</p>
+        </div>
+    </div>
+    <br>
+
+    <div class="contain">
+
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="newbox">
+                    <img src="./image/satya.jpg" id="pic" alt="Avatar" class="image">
+
+                    <div class="cont">
+                        <h3>Satya Nadella, CEO of Microsoft</h3>
+                    </div>
+                </div>
+
+
+                <p><a href="submit.html" target="_blank"><button class="glow-on-hover " type="button" onclick=m1()>Vote for Satya</button></a></p>
+
+            </div>
+
+
+            <div class="col-md-4 col-sm-12 ">
+
+                <div class="newbox">
+                    <img src="./image/ritesh.jpg" alt="Avatar" class="image">
+
+                    <div class="cont">
+                        <h3>Ritesh Agarwal, CEO of OYO</h3>
+                    </div>
+
+                </div>
+
+                <p><a href="submit.html" target="_blank"><button class="glow-on-hover btn-xs" type="button" onclick=m2()>Vote for Ritesh</button></a></p>
+            </div>
+
+
+
+            <div class="col-md-4 col-sm-12">
+                <div class="newbox">
+
+
+                    <img src="image/sundari.jpg" id="pic" alt="Avatar" class="image">
+
+
+                    <div class="cont">
+                        <h3>Sundar Pichai , CEO of Microsoft</h3>
+                    </div>
+                </div>
+
+                <p><a href="submit.html" target="_blank"><button class="glow-on-hover btn-xs" type="button" onclick=m3()>Vote for sundar</button></a></p>
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="newbox">
+
+
+                    <img src="image/shantanu.jpg" id="pic" alt="Avatar" class="image">
+
+                    <div class="cont">
+                        <h3>Shantanu Narayen , CEO of Adobe Inc</h3>
+                    </div>
+                </div>
+
+                <p><a href="submit.html" target="_blank"><button class="glow-on-hover btn-xs" type="button" onclick=m4()>Vote for shantanu</button></a></p>
+
+
+
+            </div>
+            <div class="col-md-4">
+
+                <div class="newbox">
+                    <img src="image/ghazal.jpg" id="pic" alt="Avatar" class="image">
+
+                    <div class="cont">
+                        <h3>Ghazal Alagh, CEO of Mamaearth</h3>
+                    </div>
+                </div>
+
+                <p><a href="submit.html" target="_blank"><button class="glow-on-hover btn-xs" type="button" onclick=m5()>Vote for Ghazal</button></a></p>
+
+
+            </div>
+            <div class="col-md-4 col-sm-12">
+
+                <div class="newbox">
+                    <img src="image/kalyan.jpg" id="pic" alt="Avatar" class="image">
+
+                    <div class="cont">
+                        <h3>Kalyan Krishnamamurthy , CEO of Flipkart</h3>
+                    </div>
+                </div>
+                
+                <p><a href="submit.html" target="_blank"><button class="glow-on-hover btn-xs" type="button" onclick=m6() >Vote for Kalyan</button></a></p>
+
+
+            </div>
+        </div>
+    </div>
+    
+    <!--for new code-->
+    <div class="js">
+        <h2>RESULT</h2>
+       <h5> Vote for Satya <span>==></span> <p id="demo1"></p> </h5> 
+       <h5>Vote for Ritesh <span>==></span><p id="demo2"></p> </h5> 
+       <h5>Vote for sundar <span>==></span><p id="demo3"></p></h5> 
+       <h5>Vote for shantanu  <span>==></span><p id="demo4"></p></h5> 
+       <h5>Vote for Ghazal  <span>==></span><p id="demo5"></p></h5> 
+       <h5>Vote for Kalyan  <span>==></span><p id="demo6"></p> </h5>
+    </div>
+    
+    
+    <script>
+        let c1=0;
+        let re1= document.getElementById(demo1);
+        function m1(){
+            c1+=1;
+            demo1.innerHTML=c1;
+        }
+        let c2=0;
+        let re2= document.getElementById(demo2);
+        function m2(){
+            c2+=1;
+            demo2.innerHTML=c2;
+        }
+        let c3=0;
+        let re3= document.getElementById(demo3);
+        function m3(){
+            c3+=1;
+            demo3.innerHTML=c3;
+        }
+        let c4=0;
+        let re4= document.getElementById(demo4);
+        function m4(){
+            c4+=1;
+            demo4.innerHTML=c4;
+        }
+        let c5=0;
+        let re5= document.getElementById(demo5);
+        function m5(){
+            c5+=1;
+            demo5.innerHTML=c5;
+        }
+        let c6=0;
+        let re6= document.getElementById(demo6);
+        function m6(){
+            c6+=1;
+            demo6.innerHTML=c6;
+        }
+        
+    </script>
+
+</body>
+
+</html>
